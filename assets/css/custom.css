@@ -1,0 +1,62 @@
+/* Variables Generales */
+
+:root {
+  --img-background: url("https://img.freepik.com/vector-gratis/concepto-seguridad-cibernetica_23-2148532223.jpg?w=740&t=st=1668571761~exp=1668572361~hmac=20726c45ac5f938797adcb5897e76dafc012a03136ff62c0f0b009824c89d643");
+  --white: #ffffff;
+  --color-button:0,66,121;
+}
+/*  */
+
+html, body {
+  margin:0;
+  height:100%;
+  overflow:hidden;
+}
+
+.bg-container {
+  background-image: var(--img-background);
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.div-principal{
+  border-radius: 10px;
+}
+.img-profile{
+  border-radius: 100%;
+  width: 130px;
+}
+
+.bg-principal{
+  background-color:rgb(8,8,8,0.91);
+}
+
+.ico-mode{
+  background: white;
+  color: black;
+   border-radius: 5px 5px 5px 5px;
+}
+
+.ico-platform{
+  font-size: 17px;
+  background-color: rgb(var(--color-button),0.68);
+  border-radius: 5px 5px 5px 5px;
+}
+.ico-platform:hover{
+  background-color: rgb( var(--color-button),1);
+}
+
+
+
+.white .div-principal,.white .div-principal .ico-platform, .white .div-principal .img-profile, .white .ico-mode{
+  filter: invert(100%);
+}
+
+canvas {
+  display: block;  
+}
+
